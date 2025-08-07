@@ -1,16 +1,63 @@
 <!-- thankyou.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Thank You</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
+
 <body class="bg-white flex flex-col items-center justify-center min-h-screen text-center">
+  <nav class="bg-gray-900 text-white p-4 sticky top-0 z-50">
+    <div class="flex justify-between items-center max-w-7xl mx-auto">
+      <h1 class="text-xl font-bold">MyPortfolio</h1>
+
+      <!-- Hamburger Button (mobile) -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-4" id="nav-links">
+        <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
+        <li><a href="projects.html" class="hover:text-yellow-400">Projects</a></li>
+        <li><a href="resume.html" class="hover:text-yellow-400">Resume</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <ul id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-4 px-4">
+      <li><a href="index.html" class="block hover:text-yellow-400">Home</a></li>
+      <li><a href="about.html" class="block hover:text-yellow-400">About</a></li>
+      <li><a href="projects.html" class="block hover:text-yellow-400">Projects</a></li>
+      <li><a href="resume.html" class="block hover:text-yellow-400">Resume</a></li>
+      <li><a href="contact.html" class="block hover:text-yellow-400">Contact</a></li>
+    </ul>
+  </nav>
+
   <h1 class="text-3xl font-bold text-green-600 mb-4">Thank You!</h1>
   <p class="text-lg text-gray-700">Your message has been sent successfully. I’ll get back to you soon.</p>
-  <a href="index.html" class="mt-6 inline-block px-6 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition">
+  <a href="index.html"
+    class="mt-6 inline-block px-6 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition">
     Back to Home
   </a>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
 </body>
+
 </html>
