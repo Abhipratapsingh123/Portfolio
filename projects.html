@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-gray-900 text-white p-4 flex justify-between items-center sticky top-0 z-50">
+    <h1 class="text-xl font-bold">MyPortfolio</h1>
+    <ul class="flex space-x-4">
+      <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+      <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
+      <li><a href="projects.html" class="hover:text-yellow-400">Projects</a></li>
+      <li><a href="resume.html" class="hover:text-yellow-400">Resume</a></li>
+      <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="py-16 px-6 md:px-20 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">My Projects</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Project Card 1 -->
+      <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">🎬 Movie Recommender System</h3>
+        <p class="text-gray-700 mb-4">
+          Recommender built with cosine similarity and content-based filtering using Python & Streamlit.
+        </p>
+        <a href="https://github.com/Abhipratapsingh123/Ml_projects-Movie_Recommender" target="_blank"
+          class="inline-block px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition">
+          View on GitHub
+        </a>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">💬 WhatsApp Chat Analyzer</h3>
+        <p class="text-gray-700 mb-4">
+          Tool for analyzing WhatsApp chats — built with pandas, regex, and matplotlib. Deployed with Streamlit.
+        </p>
+        <a href="https://github.com/Abhipratapsingh123/ML-project-Whatsapp_chat_analysis" target="_blank"
+          class="inline-block px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition">
+          View on GitHub
+        </a>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">🧠 Face Recognition Attendance</h3>
+        <p class="text-gray-700 mb-4">
+          Real-time face recognition attendance system using OpenCV, LBPH, Haar Cascade & Flask.
+        </p>
+        <a href="https://github.com/Abhipratapsingh123/Attendance_with_face_recognition" target="_blank"
+          class="inline-block px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition">
+          View on GitHub
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

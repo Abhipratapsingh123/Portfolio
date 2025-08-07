@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-gray-900 text-white p-4 flex justify-between items-center sticky top-0 z-50">
+    <h1 class="text-xl font-bold">MyPortfolio</h1>
+    <ul class="flex space-x-4">
+      <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+      <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
+      <li><a href="projects.html" class="hover:text-yellow-400">Projects</a></li>
+      <li><a href="resume.html" class="hover:text-yellow-400">Resume</a></li>
+      <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-white py-16 px-6 text-center shadow-md">
+    <img src="assets/profile.jpg" alt="Profile photo" class="w-32 h-32 mx-auto rounded-full mb-4 shadow-md" />
+    <h2 class="text-4xl font-bold mb-2">Abhi Pratap Singh</h2>
+    <p class="text-lg text-gray-600">AI/ML Student • Data Explorer • Code Crafter</p>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-12 px-6 md:px-24 bg-gray-50">
+    <h3 class="text-2xl font-semibold mb-4 text-yellow-600">About Me</h3>
+    <p class="text-lg leading-relaxed mb-6">
+      I'm a final-year B.Tech Computer Science (AI/ML) student at Sushant University (CGPA: 8.71). With a passion for innovation, I specialize in data preprocessing, machine learning, and deep learning. I've completed internships with Snapdeal and IBM SkillsBuild, and thrive on turning raw data into actionable insights.
+    </p>
+
+    <!-- Skills Grid -->
+    <h3 class="text-2xl font-semibold mt-10 mb-4 text-yellow-600">Skills</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-base">
+      <div class="p-4 bg-white shadow rounded-lg">
+        <h4 class="font-semibold mb-1">Languages</h4>
+        <p>Python, MySQL</p>
+      </div>
+      <div class="p-4 bg-white shadow rounded-lg">
+        <h4 class="font-semibold mb-1">Libraries & Frameworks</h4>
+        <p>Pandas, NumPy, Scikit-learn, TensorFlow, Streamlit</p>
+      </div>
+      <div class="p-4 bg-white shadow rounded-lg">
+        <h4 class="font-semibold mb-1">Tools</h4>
+        <p>Git, Flask, VS Code, Jupyter</p>
+      </div>
+      <div class="p-4 bg-white shadow rounded-lg">
+        <h4 class="font-semibold mb-1">ML & DL</h4>
+        <p>Supervised/Unsupervised, ANN, CNN, Regression, Classification</p>
+      </div>
+      <div class="p-4 bg-white shadow rounded-lg">
+        <h4 class="font-semibold mb-1">Data Analysis</h4>
+        <p>EDA, Hypothesis Testing, Model Evaluation</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-4 mt-10">
+    <p>&copy; 2025 Abhi Pratap Singh. All rights reserved.</p>
+  </footer>
+</body>
+</html>

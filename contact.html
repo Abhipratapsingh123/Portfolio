@@ -1,0 +1,50 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800">
+    <nav class="bg-gray-900 text-white p-4 flex justify-between items-center sticky top-0 z-50">
+        <h1 class="text-xl font-bold">MyPortfolio</h1>
+        <ul class="flex space-x-4">
+            <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+            <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
+            <li><a href="projects.html" class="hover:text-yellow-400">Projects</a></li>
+            <li><a href="resume.html" class="hover:text-yellow-400">Resume</a></li>
+            <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="py-12 px-4 md:px-20">
+  <h2 class="text-3xl font-bold mb-4 text-center">Contact Me</h2>
+  <form action="https://formsubmit.co/abhi.pratap9667@gmail.com" method="POST" class="space-y-4 max-w-xl mx-auto">
+    
+    <!-- Disable CAPTCHA -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Corrected Redirect -->
+    <input type="hidden" name="_next" value="thankyou.html">
+
+    <input type="text" name="name" placeholder="Your Name" class="w-full border px-4 py-2 rounded" required>
+    <input type="email" name="email" placeholder="Your Email" class="w-full border px-4 py-2 rounded" required>
+    <textarea name="message" rows="4" placeholder="Your Message" class="w-full border px-4 py-2 rounded" required></textarea>
+    
+    <button type="submit" class="px-6 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition">
+      Send
+    </button>
+  </form>
+</section>
+
+
+
+
+
+</body>
+
+</html>
